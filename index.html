@@ -305,25 +305,38 @@
   <div class="shead">
     <div>
       <div class="eyebrow">What I keep finding</div>
-      <h2 class="stack">Five vendors checked. <em>Five had it wrong.</em></h2>
+      <h2 class="stack">Five vendors checked. <em>Four had a problem.</em></h2>
     </div>
-    <p class="sub">Every wedding vendor I looked at who publishes prices had a directory listing that
-  disagreed with their own website. Two had packages listed for sale that they do not actually offer.</p>
+    <p class="sub">The fifth was clean, and I would have told her so for free. That is what the
+    guarantee is for. Every figure below is a potential loss on a single booking, taken straight
+    from the gap between what an assistant told couples and what the vendor actually charges.</p>
   </div>
   <div class="gaps">
-    <div class="gap glass"><div class="who">Wedding photographer</div>
-      <div class="amt">$1,000</div><div class="amtsub">below her real starting price</div>
-      <div class="what">A directory quoted couples a floor a thousand dollars under the one on her own pricing page.</div></div>
-    <div class="gap glass"><div class="who">Wedding photographer</div>
-      <div class="amt">$800</div><div class="amtsub">lost on a single booking</div>
-      <div class="what">His hourly rate is listed lower elsewhere, with a discount tier he has never offered.</div></div>
-    <div class="gap glass"><div class="who">Wedding venue</div>
-      <div class="amt">3</div><div class="amtsub">different answers to one question</div>
-      <div class="what">Their own site, their directory listing, and that listing&#39;s own FAQ each gave a different number.</div></div>
+    <div class="gap glass">
+      <div class="who">Wedding venue</div>
+      <div class="amt">$4,500</div>
+      <div class="amtsub">potential loss, every booking</div>
+      <div class="what">A package their own sheet marks as required. Every assistant called it
+      optional, so every couple was quoted a floor $4,500 under the real one.</div>
+    </div>
+    <div class="gap glass">
+      <div class="who">Wedding photographer</div>
+      <div class="amt">$800</div>
+      <div class="amtsub">potential loss, one wedding</div>
+      <div class="what">His page says a flat hourly rate. A directory publishes a tiered discount
+      he has never offered. On an eight hour wedding that is $800 he never agreed to give away.</div>
+    </div>
+    <div class="gap glass">
+      <div class="who">Wedding photographer</div>
+      <div class="amt">$1,600</div>
+      <div class="amtsub">potential loss, one booking</div>
+      <div class="what">An assistant quoted couples $1,600 for a service that appears nowhere on
+      his website, at a rate he never set and would have to honor or refuse.</div>
+    </div>
   </div>
   <div class="kicker glass"><span class="mk">&ldquo;</span>
-    <p>None of them knew. These listings were set up years ago and never looked at again, and now they
-    are the version AI reads out loud when a couple asks about you.</p></div>
+    <p>None of them knew. Every one of these came from a listing set up years ago, a promo post
+    nobody archived, or an assistant filling a gap on its own.</p></div>
 </section>
 
 <section id="how">
@@ -358,7 +371,7 @@
   </div>
   <div class="report">
     <div class="rhead">
-      <div><div class="rname">Wedding photographer</div>
+      <div><div class="rname">Wedding venue</div>
         <div class="rsub">Sample report &middot; 15 buyer questions &times; 3 assistants</div></div>
       <span class="pdf">&#8681; Download PDF</span></div>
     <div class="rgrid">
@@ -376,18 +389,20 @@
       </div>
       <div class="rmain">
         <div class="lbl">What&#39;s wrong, and where it came from</div>
-        <div class="fnd"><span class="fbadge x">&#10005;</span><div>
-          <div class="ft">A directory is quoting you $1,000 under your own floor</div>
-          <p>Gemini used the directory number, not the one on your pricing page.</p></div></div>
-        <div class="fnd"><span class="fbadge x">&#10005;</span><div>
-          <div class="ft">A package you don&#39;t sell is listed for sale</div>
-          <p>The same listing advertises a collection that appears nowhere on your site.</p></div></div>
-        <div class="fnd"><span class="fbadge w">!</span><div>
-          <div class="ft">Your pricing page tells AI your prices aren&#39;t fixed</div>
-          <p>Wording around the numbers reads as &quot;custom quote,&quot; so ChatGPT rounds them.</p></div></div>
-        <div class="fnd"><span class="fbadge f">&#8594;</span><div>
-          <div class="ft">Correction: the exact listing field, and what it should say</div>
-          <p>You update it yourself in about five minutes. No website changes.</p></div></div>
+          <div class="fnd"><span class="fbadge x">&#10005;</span><div>
+            <div class="ft">A required package is being quoted as optional</div>
+            <p>Your own sheet marks it required. Every assistant called it an add-on, so couples
+            are quoted a floor $4,500 below the real one.</p></div></div>
+          <div class="fnd"><span class="fbadge x">&#10005;</span><div>
+            <div class="ft">Your popup and your pricing sheet disagree by $4,000</div>
+            <p>Both are on your own website. Saturday reads $8,000 in one place and $12,000 in the other.</p></div></div>
+          <div class="fnd"><span class="fbadge w">!</span><div>
+            <div class="ft">An old brochure is still being found and quoted</div>
+            <p>An assistant surfaced rates roughly half your current ones, from a file you
+            probably forgot was online.</p></div></div>
+          <div class="fnd"><span class="fbadge f">&#8594;</span><div>
+            <div class="ft">Correction: the exact page, and what it should say</div>
+            <p>You update it yourself in about five minutes. No website rebuild, no access needed.</p></div></div>
       </div>
     </div>
     <div class="rfoot"><b>Plus a short video</b> of me walking you through every finding.</div>
@@ -432,8 +447,10 @@
           <input id="f_email" name="email" type="email" maxlength="254" required autocomplete="email"></div>
         <div class="field"><label for="f_name">Your name <span class="opt">(optional)</span></label>
           <input id="f_name" name="contact_name" type="text" maxlength="80" autocomplete="name"></div>
-        <div class="field"><label for="f_msg">Anything you want me to check <span class="opt">(optional)</span></label>
-          <textarea id="f_msg" name="message" maxlength="1000"></textarea></div>
+        <div class="field"><label for="f_books">Approximately how many weddings do you book a year? <span class="opt">(optional)</span></label>
+          <input id="f_books" name="bookings_per_year" type="text" maxlength="40"></div>
+        <div class="field"><label for="f_msg">Anything specific you want me to check? <span class="opt">(optional)</span></label>
+          <textarea id="f_msg" name="message" maxlength="1000" placeholder="A package, a competitor, a listing you've never updated"></textarea></div>
         <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="company_extra" tabindex="-1" autocomplete="off"></label></div>
         <button class="fsubmit" id="fsubmit" type="submit">Find out what AI has to say</button>
         <div class="fmsg" id="fmsg"></div>
@@ -568,6 +585,7 @@ var BOOKED = 0;   /* bump by 1 each time a client books */
       body: JSON.stringify({business_name:biz, website:site, email:email,
         contact_name: form.contact_name.value.trim() || null,
         message: form.message.value.trim() || null,
+        bookings_per_year: form.bookings_per_year.value.trim() || null,
         source:'clearlyfound.co', status:'new'})
     }).then(function(r){
       if(r.ok){ done(); }
